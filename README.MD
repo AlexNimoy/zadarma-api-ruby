@@ -1,8 +1,6 @@
 # Zadarma API ruby client
 
-Zadarma CRM docs 
-
-`https://zadarma.com/ru/support/api/`
+Zadarma CRM API [docs](https://zadarma.com/ru/support/api/).
 
 ## Simple Usage
 ```ruby
