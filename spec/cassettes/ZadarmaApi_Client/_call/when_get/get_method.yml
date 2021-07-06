@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.zadarma.com/v1/info/balance/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.3
+      Accept:
+      - application/json
+      Authorization:
+      - "<API_AUTHORIZATION>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 04 Jul 2021 09:46:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8;
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - '1'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, PUT, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, X-Content-Type-Options, X-XSS-Protection,
+        X-Frame-Options, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-Zadarma-Method
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Zadarma-Method:
+      - "/v1/info/balance/"
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '99'
+      X-Ratelimit-Reset:
+      - '1625392028'
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","balance":0,"currency":"RUB"}'
+    http_version:
+  recorded_at: Sun, 04 Jul 2021 09:46:07 GMT
+recorded_with: VCR 5.1.0

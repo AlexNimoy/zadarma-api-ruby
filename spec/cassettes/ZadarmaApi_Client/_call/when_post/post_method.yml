@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.zadarma.com/v1/sms/send/
+    body:
+      encoding: UTF-8
+      string: message=Hello&number=12345
+    headers:
+      User-Agent:
+      - Faraday v1.4.3
+      Accept:
+      - application/json
+      Authorization:
+      - "<API_AUTHORIZATION>"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 400
+      message: Bad request
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 04 Jul 2021 09:46:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8;
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - '1'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, PUT, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, X-Content-Type-Options, X-XSS-Protection,
+        X-Frame-Options, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-Zadarma-Method
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Zadarma-Method:
+      - "/v1/sms/send/"
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '98'
+      X-Ratelimit-Reset:
+      - '1625392028'
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","message":"There are less than 25 cents on your balance"}'
+    http_version:
+  recorded_at: Sun, 04 Jul 2021 09:46:08 GMT
+recorded_with: VCR 5.1.0

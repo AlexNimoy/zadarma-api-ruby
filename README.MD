@@ -22,12 +22,12 @@ api_version| string  | zadarma api version    | v1     | false
 ### Call params
 
 ```ruby
-zadarma_client.call(method, request_type, params)
+zadarma_client.call(path, method, params)
 ```
 
 option         | type    | description            | default | required
 ---------------|---------|------------------------|---------|---------
-method         | string  | you key                |         | true
-request_type   | string  | get, post, put, delete | get     | true
+path           | string  | path                   |         | true
+method         | string  | get, post, put, delete | get     | true
 params         | hash    | request params         | {}      | false
 
